@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col offset-m1 offset-l1">
+                <div class="valign-wrapper">
+                <!-- Name and Link to Photo -->
+                    <div class="card animated fadeInLeft surveyCard" id="profile">
+                        <div class="card-content">
+                            <form>
+                                <div class="input-field" id="profileNameField">
+                                    <input id="yourName" type="text">
+                                    <label for="yourName">Your Name</label>
+                                </div>
+                                <div class="input-field" id="profileNameField">
+                                    <input id="yourPic" type="url" class="validate">
+                                    <label for="yourPic">Enter the URL to your profile picture</label>
+                                    <span class="helper-text" data-error="Please enter a valid URL" data-success="URL looks good!"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="profileSubmit"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 1 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q1">
+                        <div class="card-content">
+                            <h3>How many hours per week, on average, would you say you spend playing games?</h3>
+                            <div class="input-field">
+                                <select id="question1">
+                                    <option value="" disabled selected>Choose a range</option>
+                                    <option class="submit" id="submitA" value="1">0-2</option>
+                                    <option class="submit" id="submitB" value="2">2-5</option>
+                                    <option class="submit" id="submitC" value="3">5-10</option>
+                                    <option class="submit" id="submitD" value="4">10-20</option>
+                                    <option class="submit" id="submitE" value="5">20+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit1"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 2 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q2">
+                        <div class="card-content">
+                            <h3>I enjoy discovering offbeat or unconventional ways to play the games I enjoy.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer2" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit2"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 3 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q3">
+                        <div class="card-content">
+                            <h3>I enjoy taking on difficult challenges that may take many tries to succeed in the games I play.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer3" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit3"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 4 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q4">
+                        <div class="card-content">
+                            <h3>I enjoy having many customization options in my games.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer4" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit4"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 5 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q5">
+                        <div class="card-content">
+                            <h3>I enjoy games with an elaborate storyline.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer5" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit5"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 6 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q6">
+                        <div class="card-content">
+                            <h3>I enjoy games that give me a chance to improve the power of my character/avatar.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer6" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit6"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 7 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q7">
+                        <div class="card-content">
+                            <h3>I like to complete all of the possible missions and achievements in a game.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer7" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit7"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 8 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q8">
+                        <div class="card-content">
+                            <h3>I like accumulating large amounts of in-game resources/currency, and playing the economy aspect of my games.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer8" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit8"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 9 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q9">
+                        <div class="card-content">
+                            <h3>I prefer games where I can dominate my opponents instead of cooperating with them or having close competition.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer9" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit9"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Question 10 -->
+                    <div class="card animated fadeInLeft surveyCard" id="q10">
+                        <div class="card-content">
+                            <h3>I like games that give me a sense of immersion, where I can pretend I am someone or somewhere else.</h3>
+                            <form>
+                                <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
+                                <p class="range-field">
+                                    <input type="range" id="answer10" min="1" max="5" />
+                                </p>
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn submit" id="submit10"><i class="material-icons right">send</i>Submit</a>
+                        </div>
+                    </div>
+                <!-- Results -->
+                    <div class="card animated fadeInLeft surveyCard center-align" id="results">
+                        <div class="card-content">
+                            <h2>Match Found!</h2>
+                            <div id="matchImage"></div>
+                            <div id="matchName"></div>
+                            <p>Happy Gaming!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/survey.js"></script>
+</body>
+</html>

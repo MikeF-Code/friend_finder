@@ -1,3 +1,12 @@
+html body .container {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Press Start 2P';
+}
+
 .surveyCard {
     width: 50vw;
+    background-color: rgba(0, 0, 0, 0);
 }

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container valign-wrapper">
         <div class="row">
-            <div class="col offset-m1 offset-l1">
-                <div class="valign-wrapper">
+            <div class="col">
                 <!-- Name and Link to Photo -->
                     <div class="card animated fadeInLeft surveyCard" id="profile">
                         <div class="card-content">
@@ -22,9 +22,9 @@
                                     <input id="yourName" type="text">
                                     <label for="yourName">Your Name</label>
                                 </div>
-                                <div class="input-field" id="profileNameField">
+                                <div class="input-field" id="profilePicField">
                                     <input id="yourPic" type="url" class="validate">
-                                    <label for="yourPic">Enter the URL to your profile picture</label>
+                                    <label for="yourPic">Profile Pic URL</label>
                                     <span class="helper-text" data-error="Please enter a valid URL" data-success="URL looks good!"></span>
                                 </div>
                             </form>
@@ -36,7 +36,7 @@
                 <!-- Question 1 -->
                     <div class="card animated fadeInLeft surveyCard" id="q1">
                         <div class="card-content">
-                            <h3>How many hours per week, on average, would you say you spend playing games?</h3>
+                            <h4>How many hours per week, on average, would you say you spend playing games?</h4>
                             <div class="input-field">
                                 <select id="question1">
                                     <option value="" disabled selected>Choose a range</option>
@@ -55,7 +55,7 @@
                 <!-- Question 2 -->
                     <div class="card animated fadeInLeft surveyCard" id="q2">
                         <div class="card-content">
-                            <h3>I enjoy discovering offbeat or unconventional ways to play the games I enjoy.</h3>
+                            <h4>I enjoy discovering offbeat or unconventional ways to play the games I enjoy.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -70,7 +70,7 @@
                 <!-- Question 3 -->
                     <div class="card animated fadeInLeft surveyCard" id="q3">
                         <div class="card-content">
-                            <h3>I enjoy taking on difficult challenges that may take many tries to succeed in the games I play.</h3>
+                            <h4>I enjoy taking on difficult challenges that may take many tries to succeed in the games I play.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -85,7 +85,7 @@
                 <!-- Question 4 -->
                     <div class="card animated fadeInLeft surveyCard" id="q4">
                         <div class="card-content">
-                            <h3>I enjoy having many customization options in my games.</h3>
+                            <h4>I enjoy having many customization options in my games.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -100,7 +100,7 @@
                 <!-- Question 5 -->
                     <div class="card animated fadeInLeft surveyCard" id="q5">
                         <div class="card-content">
-                            <h3>I enjoy games with an elaborate storyline.</h3>
+                            <h4>I enjoy games with an elaborate storyline.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -115,7 +115,7 @@
                 <!-- Question 6 -->
                     <div class="card animated fadeInLeft surveyCard" id="q6">
                         <div class="card-content">
-                            <h3>I enjoy games that give me a chance to improve the power of my character/avatar.</h3>
+                            <h4>I enjoy games that give me a chance to improve the power of my character/avatar.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -130,7 +130,7 @@
                 <!-- Question 7 -->
                     <div class="card animated fadeInLeft surveyCard" id="q7">
                         <div class="card-content">
-                            <h3>I like to complete all of the possible missions and achievements in a game.</h3>
+                            <h4>I like to complete all of the possible missions and achievements in a game.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -145,7 +145,7 @@
                 <!-- Question 8 -->
                     <div class="card animated fadeInLeft surveyCard" id="q8">
                         <div class="card-content">
-                            <h3>I like accumulating large amounts of in-game resources/currency, and playing the economy aspect of my games.</h3>
+                            <h4>I like accumulating large amounts of in-game resources/currency, and playing the economy aspect of my games.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -160,7 +160,7 @@
                 <!-- Question 9 -->
                     <div class="card animated fadeInLeft surveyCard" id="q9">
                         <div class="card-content">
-                            <h3>I prefer games where I can dominate my opponents instead of cooperating with them or having close competition.</h3>
+                            <h4>I prefer games where I can dominate my opponents instead of cooperating with them or having close competition.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -175,7 +175,7 @@
                 <!-- Question 10 -->
                     <div class="card animated fadeInLeft surveyCard" id="q10">
                         <div class="card-content">
-                            <h3>I like games that give me a sense of immersion, where I can pretend I am someone or somewhere else.</h3>
+                            <h4>I like games that give me a sense of immersion, where I can pretend I am someone or somewhere else.</h4>
                             <form>
                                 <p>Answer 1 - 5, with 5 being Strongly Agree and 1 being Strongly Disagree.</p>
                                 <p class="range-field">
@@ -190,13 +190,12 @@
                 <!-- Results -->
                     <div class="card animated fadeInLeft surveyCard center-align" id="results">
                         <div class="card-content">
-                            <h2>Match Found!</h2>
+                            <h3>Match Found!</h3>
                             <div id="matchImage"></div>
-                            <div id="matchName"></div>
+                            <h2 id="matchName"></h2>
                             <p>Happy Gaming!</p>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div> 

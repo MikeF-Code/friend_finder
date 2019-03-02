@@ -138,9 +138,7 @@ $(document).ready(function() {
                     var matchingImage = $("<img>");
                     matchingImage.attr("src", matchData.photo);
                     $("#matchImage").append(matchingImage);
-                    var matchingName = $("<p>");
-                    matchingName.text(matchData.name);
-                    $("#matchname").append(matchingName);
+                    $("#matchName").text(matchData.name);
                     $("#results").show();
                 });
                 break;
